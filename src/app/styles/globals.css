@@ -1,0 +1,213 @@
+.login {
+    max-width: 400px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 3px 3px ;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+.admin input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#admin {
+    max-width: 400px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+img.bounce {
+  animation: bounce 3s infinite;
+}
+
+.bounce {
+  border-radius: 100px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: +100;
+}
+
+.cut {
+  background: url('linecut.gif');
+  height: 4px;
+}
+
+
+@keyframes fadeInScaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  animation: fadeInScaleUp 1.5s ease-out forwards;
+}
+
+.facebook {
+  width: 100%;
+
+}
+
+.d-block {
+ width: 33%;
+}
+
+.carousel-item {
+ display: flex;
+}
+
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.logoSection img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.logoSection p {
+  font-size: 0.75rem;
+}
+
+.linksSection h4, .socialSection h4 {
+  margin-bottom: 10px;
+}
+
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.linksSection ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.linksSection ul li a:hover {
+  color: #f39c12;
+}
+
+.socialSection div a img {
+  width: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.socialSection div a:hover img {
+  transform: scale(1.1);
+}
+
+
+.img {
+  width: 90%;
+  height: auto;
+}
+
+.himg {
+  width: 100%;
+  height: auto;
+}
+
+
+.text {
+  transition: color 0.3s ease;
+}
+
+.text:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+/* styles/Shadow.module.css */
+.shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.blur {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* styles/Path.module.css */
+@keyframes text-move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.text-path {
+  animation: text-move 10s infinite linear;
+}
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slidingText {
+  animation: slideDown 2s ease-out;
+}
+
+
+
+.NavBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: top 0.3s;
+  }
+  
+  .NavBar.hidden {
+    top: -50px; /* ซ่อนแนวบาร์ขึ้นด้านบน */
+  }
+  
+  .NavBar.visible {
+    top: 0; /* แสดงแนวบาร์ */
+  }
+  
+ 
+  
